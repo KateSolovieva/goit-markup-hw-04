@@ -8,7 +8,6 @@ body {
   --main-background-color: #2f303a;
   --main-background-color-grey: #f5f4fa;
   --main-background-color-blue: #2196f3;
-  
 }
 
 /* Header */
@@ -98,7 +97,7 @@ li {
   color: var(--main-text-color-white);
   background: var(--main-background-color-blue);
   border: none;
-  }
+}
 
 .main-button:hover:focus {
   cursor: pointer;
@@ -139,34 +138,34 @@ li {
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
-color: var (--main-text-color-black);
+  color: var (--main-text-color-black);
 }
 .portfolio p {
   font-weight: 400;
-font-size: 16px;
-line-height: 30px;
-letter-spacing: 0.03em;
-color: var(--main-text-color-grey);
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-grey);
 }
 /* Footer */
 
-.footer{
+.footer {
   width: 1600px;
-height: 252px;
-left: 0px;
-top: 1628px;
-background-color: var(--main-background-color);
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+  background-color: var(--main-background-color);
 }
 
 .footer-logo {
   font-weight: 700;
-font-size: 26px;
-line-height: 31px;
-letter-spacing: 0.03em;
-color: var(--main-text-color-blue);
-font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-blue);
+  font-family: "Raleway", sans-serif;
 }
-.footer-colored{
+.footer-colored {
   color: var(--main-text-color-white);
 }
 
@@ -185,14 +184,13 @@ font-family: 'Raleway', sans-serif;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  
 }
-.footer-adress{
+.footer-adress {
   color: var(--main-text-color-white);
-} 
-.footer-mail{
+}
+.footer-mail {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-contact{
+.footer-contact {
   color: rgba(255, 255, 255, 0.6);
 }
