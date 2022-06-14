@@ -1,0 +1,230 @@
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  --main-text-color-blue: #2196f3;
+  --main-text-color: #000000;
+  --main-text-color-grey: #757575;
+  --main-text-color-black: #212121;
+  --main-text-color-white: #ffffff;
+  --main-background-color-grey:#2f303a;
+}
+
+/* Header */
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.header-logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color-blue);
+  font-family: 'Raleway', sans-serif;
+}
+
+.header-logo .logo-colored {
+  color: var(--main-text-color);
+}
+
+.link-studio:hover{
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: var(--main-text-color-blue);
+
+}
+.link-portfolio {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color-black);
+}
+
+.link-contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color-black);
+}
+
+.header-mail:hover {
+  font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+
+color: var(--main-text-color-blue);
+}
+  
+.header-contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: var(--main-text-color-grey);
+}
+/* Блок уникального контента */
+.main-title {
+  background: var(--main-background-color-grey);
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--main-text-color-white);
+}
+
+.main-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color-white);
+  background: #2196F3;
+  border: none
+}
+
+.main-button:hover:focus{
+cursor: pointer
+}
+
+/* Section Features */
+.features-h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-text-color-black);
+}
+
+
+.features h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--main-text-color-black);
+}
+
+.features p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color-grey);
+}
+
+/* Section Our deals */
+.title-deals {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color-black);
+}
+
+/* Section Our team */
+.title-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color-black);
+}
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color-black);
+}
+
+.team-list p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color-grey);
+}
+
+/* Footer */
+.footer {
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 2097px;
+
+  background: var(--main-background-color-grey);
+}
+
+.footer-logo{
+font-weight: 700;
+font-size: 26px;
+line-height: 31px;
+letter-spacing: 0.03em;
+color: var(--main-text-color-blue);
+font-family: 'Raleway', sans-serif;
+}
+
+.footer-colored{
+  color: var(--main-text-color-white);
+}
+
+.footer-adress {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text-color-white);
+}
+.footer-list a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  
+}
+.footer-adress{
+  color: var(--main-text-color-white);
+} 
+.footer-mail{
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact{
+  color: rgba(255, 255, 255, 0.6);
+}
