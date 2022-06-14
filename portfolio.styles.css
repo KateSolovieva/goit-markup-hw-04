@@ -32,20 +32,20 @@ li {
   color: var(--main-text-color);
 }
 
-.link-studio:hover {
+.link-studio {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: var(--main-text-color-blue);
+  color: var(--main-text-color-black);
 }
-.link-portfolio {
+.link-portfolio:hover {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  color: var(--main-text-color-black);
+  color: var(--main-text-color-blue);
 }
 
 .link-contacts {
