@@ -42,7 +42,7 @@ li {
   color: var(--main-text-color);
 }
 
-.link-studio:hover {
+.link-studio:hover,.link-studio:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -57,13 +57,16 @@ li {
   letter-spacing: 0.02em;
   color: var(--main-text-color-black);
 }
+.link-studio-current {
+  color: var(--main-text-color-blue);
+  }
 
-.link-portfolio:hover {
+
+.link-portfolio:hover,.link:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--main-text-color-blue);
 }
 
@@ -75,12 +78,13 @@ li {
   color: var(--main-text-color-black);
 }
 
-.link-contacts:hover {
+
+
+.link-contacts:hover,.link:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--main-text-color-blue);
 }
 
@@ -89,11 +93,13 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   color: var(--main-text-color-black);
 }
 
-.header-mail:hover {
+
+
+
+.header-mail:hover,.header-mail:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -101,17 +107,19 @@ li {
 
   color: var(--main-text-color-blue);
 }
-
+.header-mail-current{
+  color: var(--main-text-color-blue);
+}
 .header-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: var(--main-text-color-black);
+  color: var(--main-text-color-gray);
 }
 
-.header-contact:hover {
+.header-contact:hover,.header-contact:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -155,15 +163,26 @@ li {
   border: none;
 }
 
-.main-button:hover:focus {
+.main-button:hover,.main-button:focus {
   cursor: pointer;
   color: var(--main-text-color-white);
   background: var(--main-background-color-blue);
 }
 
 /* Section Features */
-
-.features h2 {
+.visually-hidden{
+  position:absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect (0 0 0 0);
+  clip-path: inset (100%);
+  margin: -1px;
+}
+.features h3 {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -194,10 +213,9 @@ li {
 }
 
 /* Section Our team */
-.team {
-  background: (--main-background-color-ghost-white);
-}
-.title-team {
+
+
+.team-title { 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -205,7 +223,7 @@ li {
 
   color: var(--main-text-color-black);
 }
-.team h4 {
+.team-list h5 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -259,7 +277,7 @@ li {
 
   color: var(--main-text-color-white);
 }
-.footer-adress:hover {
+.footer-adress:hover,.footer-adress:focus {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -271,12 +289,12 @@ li {
 .footer-mail {
   color: var(--main-text-light-color);
 }
-.footer-mail:hover:focus {
+.footer-mail:hover,.footer-mail:focus {
   color: var(--main-text-color-blue);
 }
 .footer-contact {
   color: var(--main-text-light-color);
 }
-.footer-contact:hover:focus {
+.footer-contact:hover,.footer-contact:focus {
   color: var(--main-text-color-blue);
 }

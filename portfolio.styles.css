@@ -9,13 +9,13 @@
   --main-background-color-gray: #f5f4fa;
   --main-background-color-blue: #2196f3;
   --main-background-color-light-gray: #e5e5e5;
-  --main-background-color-middle-gray: #eeeeee;
+  --main-background-color-white: #ffffff;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: var(--main-text-color-gray);
-  background: var(--main-background-color-white);
+  color: var(--main-text-color-black);
+  background-color: var(--main-background-color-white);
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -49,7 +49,7 @@ li {
   color: var(--main-text-color-black);
 }
 
-.link-studio:hover {
+.link-studio:hover,.link-studio:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -65,12 +65,16 @@ li {
   color: var(--main-text-color-black);
 }
 
-.link-portfolio:hover {
+.link-portfolio:hover,.link-portfolio:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  color: var(--main-text-color-blue);
+}
+
+.link-portfolio-current{
   color: var(--main-text-color-blue);
 }
 
@@ -83,7 +87,7 @@ li {
   color: var(--main-text-color-black);
 }
 
-.link-contacts:hover {
+.link-contacts:hover,.link-contacts:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -104,7 +108,7 @@ li {
 
 
 
-.header-mail:hover {
+.header-mail:hover,.header-mail:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -122,7 +126,7 @@ li {
   color: var(--main-text-color-gray);
 }
 
-.header-contact:hover {
+.header-contact:hover,.header-contact:focus {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -131,9 +135,11 @@ li {
   color: var(--main-text-color-blue);
 }
 
-/*Блок уникального контента*/
+/* Section Portfolio */
+
 
 .button-all {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -143,83 +149,32 @@ li {
   border: none;
 }
 
-.button-all:hover:focus {
+.button-all:hover, .button-all:focus {
   cursor: pointer;
   background-color: var(--main-background-color-blue);
   color: var(--main-text-color-white);
 }
 
-.button-web {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.6;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-text-color-black);
-border: none;
-}
-.button-web:hover:focus{
-  cursor: pointer;
-  background-color: var(--main-background-color-blue);
-  color: var(--main-text-color-white);
+.visually-hidden{
+  position:absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect (0 0 0 0);
+  clip-path: inset (100%);
+  margin: -1px;
 }
 
-.button-application {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.6;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-text-color-black);
-border: none;
-}
-.button-application:hover:focus{
-  cursor: pointer;
-  background-color: var(--main-background-color-blue);
-  color: var(--main-text-color-white);
-}
-
-
-
-.button-design {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.6;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-text-color-black);
-border: none;
-}
-.button-design:hover:focus{
-  cursor: pointer;
-  background-color: var(--main-background-color-blue);
-  color: var(--main-text-color-white);
-}
-
-
-.button-marketing {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.6;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--main-text-color-black);
-border: none;
-}
-
-.button-marketing:hover:focus{
-  cursor: pointer;
-  background-color: var(--main-background-color-blue);
-  color: var(--main-text-color-white);
-}
-
-.portfolio h3 {
+.portfolio h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var (--main-text-color-black);
-  background-color: var(main-background-color-middle-gray);
+  
+  
 }
 .portfolio p {
   font-weight: 400;
@@ -227,7 +182,7 @@ border: none;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--main-text-color-gray);
-  background-color: var(main-background-color-middle-gray);
+  
 }
 /* Footer */
 
@@ -265,7 +220,7 @@ border: none;
 
   color: var(--main-text-color-white);
 }
-.footer-adress:hover:focus {
+.footer-adress:hover,.footer-adress:focus {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -277,12 +232,12 @@ border: none;
 .footer-mail {
   color: var(--main-text-light-color);
 }
-.footer-mail:hover:focus {
+.footer-mail:hover,.footer-mail:focus {
   color: var(--main-text-color-blue);
 }
 .footer-contact {
   color: var(--main-text-light-color);
 }
-.footer-contact:hover:focus {
+.footer-contact:hover,.footer-contact:focus {
   color: var(--main-text-color-blue);
 }
