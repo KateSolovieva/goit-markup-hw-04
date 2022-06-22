@@ -179,7 +179,7 @@ li {
   border: 0;
   padding: 0;
   clip: rect (0 0 0 0);
-  clip-path: inset (50%);
+  clip-path: inset (100%);
   margin: -1px;
 }
 .features h3 {
@@ -215,7 +215,7 @@ li {
 /* Section Our team */
 
 
-.team-title { 
+.team-title>h2 { 
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -223,7 +223,7 @@ li {
 
   color: var(--main-text-color-black);
 }
-.team-list h5 {
+.team-list h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
