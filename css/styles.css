@@ -229,7 +229,6 @@ li {
   line-height: 1.18;
 
   letter-spacing: 0.03em;
-  background: var(--main-background-color-white);
   color: var(--main-text-color-black);
 }
 
