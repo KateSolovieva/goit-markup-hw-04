@@ -1,4 +1,4 @@
-/*Стили для html*/
+
 :root {
   --main-text-color: #212121;
   --secondary-text-color: #757575;
@@ -8,8 +8,15 @@
   --main-bg-color: #E5E5E5;
   --secondary-bg-color: #F5F4FA;
   --accent-bg-color: #2F303A;
+  --border-card-color: #EEEEEE;
+  --border-header-color: #ECECEC;
   
   }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
 
 body {
   color: var(--main-text-color);
@@ -21,14 +28,45 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
   }
 
 a {
   text-decoration: none;
+  font-style: normal; 
   }
+  
+  h1,h2,h3,h4,h5,h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}      
+   
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+  
 
 /*Секция Хедер*/
+.page-header {
+  border-bottom: 1px solid var(--border-header-color);
+}
+
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+
   color: var(--blue-color);
   font-family: 'Raleway', sans-serif ;
   font-weight: 700;
@@ -41,7 +79,31 @@ a {
 }
        
 /* Навигация */
+
+.main-nav,
+.general-nav {
+  display: flex;
+}
+
+.site-nav {
+  display: flex;
+  padding-left: 0;
+}
+
+.site-nav .item {
+  margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+  margin-right: 0;
+}
+
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--main-text-color);    
   font-weight: 500;    
   line-height: 1.14;
@@ -59,6 +121,10 @@ a {
 
 /*Контакты*/
 .link-contacts .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondary-text-color);
   font-weight: 500;    
   line-height: 1.14;
@@ -68,10 +134,21 @@ a {
 .link-contacts .link:focus {
   color: var(--blue-color);    
 }
+.link-contacts {
+  display: flex;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: auto;
+}
 
+.link-contacts .item + .item {
+  margin-left: 50px;
+}
 
 /*Кнопки*/
 .button {
+  margin-top: 100px;
+  padding: 6px 22px;
   font-family: 'Roboto', sans-serif;
   color: var(--main-text-color);
   background-color: var(--secondary-bg-color);
@@ -82,6 +159,7 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   border: none;
+  border-radius: 4px; 
   
   }
 
@@ -110,10 +188,8 @@ a {
 
 .portfolio{
   background-color: var (var(--main-bg-color));
+  margin-bottom: 100px;
 }
-
-
-
 
 .portfolio-picture .item {
   color: var(--secondary-text-color);
@@ -127,14 +203,55 @@ a {
   font-size: 18px;
   line-height: 2;    
   letter-spacing: 0.06em;
+
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 30px;
+}     
+.portfolio-card {
+  width: calc((100% - 60px) / 3);
 }
 
+.portfolio-picture-description {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-card-color);
+  border-left: 1px solid var(--border-card-color);
+  border-right: 1px solid var(--border-card-color);
+}
+.portfolio-card-description .title {
+  margin-bottom: 4px;
+}
+
+.filter {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;    
+}
+
+.filter .button {
+  margin-right: 8px;
+}
 
 
 /*Секция Футер*/
 .footer {
   background-color: var(--accent-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+ 
 
+}
+
+.footer .logo {
+  display: block;
+  margin-right: 93px;
+
+  color: var(--blue-color);
 }
 
 .footer-logo-accent{
@@ -147,9 +264,10 @@ a {
 }
 
 .footer-contacts .link {
+  display: block;
   color: rgba(255, 255, 255, 0.6);    
   line-height: 1.71;
-  
+  margin-top: 9px;
 }
 
 .footer-contacts .footer-adress:hover {
@@ -161,4 +279,8 @@ a {
   color: var(--blue-color);
 }
 
-
+.footer-contacts {
+  display: block;
+  padding-left: 0;
+  
+}
