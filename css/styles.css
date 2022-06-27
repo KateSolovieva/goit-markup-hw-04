@@ -2,6 +2,7 @@
   --main-text-color: #212121;
   --secondary-text-color: #757575;
   --blue-color: #2196F3;
+  --black-color: #000000;
   --accent-text-color: #ffffff; 
   --main-bg-color: #2F303A;
   --primary-bg-color: #E5E5E5;
@@ -28,7 +29,7 @@ a {
 
 /*Секция хедер*/
 .logo {
-  color: var(--main-text-color);
+  color: var(--blue-color);
   font-family: 'Raleway', sans-serif ;
   font-weight: 700;
   font-size: 26px;
@@ -36,7 +37,7 @@ a {
   
 }
 .logo-accent {
-  color: var(--blue-color);
+  color: var(--black-color);
 }
        
 /* Навигация */
@@ -177,6 +178,10 @@ line-height: 1.19;
 
 }
 .footer .logo {
+  color: var(--blue-color);
+}
+
+.footer-logo-accent{
   color: var(--accent-text-color);
 }
 
