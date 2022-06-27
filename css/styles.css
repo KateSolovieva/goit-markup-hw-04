@@ -108,14 +108,7 @@ background-color: var(--main-bg-color);
 }
 /*Секция наши особенности*/
 
-.feature-list  {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;        
-  }
-  
-  .visually-hidden{
+.visually-hidden{
   position:absolute;
   white-space: nowrap;
   width: 1px;
@@ -127,11 +120,26 @@ background-color: var(--main-bg-color);
   clip-path: inset (100%);
   margin: -1px;
   }
-.feature-list .item {
-  color: var(--secondary-text-color);
-  line-height: 1.71;         
-  
+
+ 
+.feature-list .title{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 }
+
+
+.feature-list .item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+
 
 /*Секция наши занятия*/
 .skills-title {
@@ -162,7 +170,7 @@ letter-spacing: 0.03em;
 .team-face .title {
   font-weight: 500;
   font-size: 16px;
-  line-height:1.17;
+  line-height:1.19;
 }
 
 .team-face .item {
