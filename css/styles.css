@@ -152,7 +152,7 @@ p {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 100px;
+ 
 }
 .hero-title {
   margin-bottom: 30px;
@@ -192,13 +192,18 @@ p {
 }
 /*Секция наши особенности*/
 .feature {
-  margin-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .feature-list {
   display: flex;
   gap: 30px;
   padding-left: 0;
-}
+  }
+
+  .feature-list.link{
+    width: 270p;
+  }
 
 .visually-hidden {
   position: absolute;
@@ -236,7 +241,7 @@ p {
 
 .skills {
   padding-top: 0px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .skills-title {
@@ -257,21 +262,19 @@ p {
 /*Секция наша команда*/
 .team {
   background-color: var(--secondary-bg-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .team-title {
-  padding-bottom: 50px;
-  padding-top: 100px;
+  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.team-list {
-  padding-bottom: 100px;
-}
 
 .team-face {
   background-color: var(--accent-text-color);
@@ -312,11 +315,16 @@ p {
   padding-bottom: 60px;
   margin-bottom: 0px;
 }
-.footer .logo {
+.footer-logo {
+  color: var(--blue-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
   display: block;
   margin-right: 93px;
+  margin-bottom: 20px;
 
-  color: var(--blue-color);
 }
 
 .footer-logo-accent {
